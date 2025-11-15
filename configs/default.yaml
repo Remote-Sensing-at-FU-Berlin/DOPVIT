@@ -7,18 +7,17 @@ epochs: 100
 lr: 1e-5
 seed: 316
 paths:
-train_dir: "/mnt/j/54TB/Jonathan/MSN/train/"
-label_file: "/mnt/j/54TB/Jonathan/MSN/balanced_dataset.txt"
-model_out: "/mnt/j/54TB/Jonathan/MSN/final_cnn_model.pth"
-gradcam_out: "/mnt/j/54TB/Jonathan/MSN/gradcam_outputs"
-nir_csv: "/mnt/j/54TB/Jonathan/MSN/nir_importance_results.csv"
-
+  train_dir: "/mnt/j/54TB/Jonathan/MSN/train/"
+  label_file: "/mnt/j/54TB/Jonathan/MSN/balanced_dataset.txt"
+  model_out: "/mnt/j/54TB/Jonathan/MSN/final_cnn_model.pth"
+  gradcam_out: "/mnt/j/54TB/Jonathan/MSN/gradcam_outputs"
+  nir_csv: "/mnt/j/54TB/Jonathan/MSN/nir_importance_results.csv"
 
 augmentation:
-horizontal_flip: true
-vertical_flip: true
-rotation: 30
-affine: {translate: [0.1,0.1], scale: [0.9,1.1]}
+  horizontal_flip: true
+  vertical_flip: true
+  rotation: 30
+  affine: {translate: [0.1,0.1], scale: [0.9,1.1]}
 
 
 val_split: 0.1

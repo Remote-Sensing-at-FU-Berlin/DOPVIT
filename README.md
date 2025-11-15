@@ -19,7 +19,3 @@ This project contains:
 
 ## Requirements
 PyTorch, torchvision, numpy, matplotlib
-
-## Train ViT
-```bash
-python scripts/train_vit.py

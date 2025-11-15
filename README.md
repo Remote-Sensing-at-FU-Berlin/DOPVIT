@@ -1,11 +1,25 @@
-# <tutorial title>
+# ViT Tree Species Classification from DOP
 
-This repo contains tutorials from **Name(s) of Creator(s)** to get you started with **what is this about?**. You can either work through them by opening them in your browser or by cloning the repo to your local computer (see below).
+This project uses a Vision Transformer to classify digital orthophotos of forest canopy in 10m by 10m patches.
+To train you need labeled data, RGB+NIR with at least 20cm resolution is recommended.
 
+This project contains:
+- CNN and ViT models for species classification
+- Full training loop with early stopping
+- Explainability tools (Grad-CAM, occlusion)
+- Modular architecture for experiments
+- Reproducible scripts and documentation
+
+## Structure
+- `models/` – CNN, ViT wrapper, model factory
+- `training/` – train, eval, early stopping
+- `explainability/` – gradcam + occlusion
+- `scripts/` – runnable training and explainability scripts
+- `docs/` – flowchart + documentation
+
+## Requirements
+PyTorch, torchvision, numpy, matplotlib
+
+## Train ViT
 ```bash
-git clone https://github.com/Remote-Sensing-at-FU-Berlin/<repo-name>.git
-```
-
-If you re-distribute this tutorial series, please acknowledge the original author with the following citation:
-
-> "<tutorial title\>" (https://github.com/Remote-Sensing-at-FU-Berlin/<repo-name>) by **Name(s) of Creator(s)**. The tutorial series is licensed under CC BY SA 4.0.
+python scripts/train_vit.py

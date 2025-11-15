@@ -15,7 +15,6 @@ This project contains:
 - `training/` – train, eval, early stopping
 - `explainability/` – gradcam + occlusion
 - `scripts/` – runnable training and explainability scripts
-- `docs/` – flowchart + documentation
 
 ## Requirements
 PyTorch, torchvision, numpy, matplotlib
